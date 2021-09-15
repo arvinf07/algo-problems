@@ -24,3 +24,4 @@ function isLucky(n) {
   })
 
   return sum1 === sum2
+}
