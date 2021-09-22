@@ -11,12 +11,10 @@ function areSimilar(a, b) {
   }
   
   for(let i = 0; i < b.length; i++){
-      if( obj[b[i]] && a[i] === b[i] ){
+      if(obj[b[i]]){
           obj[b[i]]--
-      } else if( obj[b[i]] && a[i] !== b[i] ){
-          obj[b[i]]--
-          swap++
-      } else{
+          (a[i] === b[i]) ? null : swap++
+      } else {
           return false
       }
   }
